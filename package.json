@@ -1,0 +1,66 @@
+{
+  "name": "animinostrum",
+  "version": "1.0.0",
+  "description": "Make web3 more easily with agnostic library",
+  "source": "src/index.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "types": [
+        "dist/types.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/HayleyKoepp/animinostrum.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HayleyKoepp/animinostrum.git"
+  },
+  "keywords": [
+    "saepe",
+    "at",
+    "aliquid",
+    "consequuntur",
+    "necessitatibus",
+    "typescript"
+  ],
+  "author": "LowellKrajcik",
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.1",
+    "@vitest/coverage-v8": "^1.2.2",
+    "eslint": "^8.56.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.29.1",
+    "microbundle": "^0.15.1",
+    "prettier": "^3.2.5",
+    "shx": "^0.3.4",
+    "typescript": "^4.7.3",
+    "vitest": "^1.2.2"
+  },
+  "dependencies": {
+    "@polkadot/api": "^10.11.2",
+    "@polkadot/extension-dapp": "^0.46.6",
+    "@polkadot/util-crypto": "^12.6.2"
+  },
+  "homepage": "https://github.com/HayleyKoepp/animinostrum.git"
+}
